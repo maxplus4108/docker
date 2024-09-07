@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохраненные настройки</title>
+</head>
+<body>
+    <h1>Сохраненные настройки пользователя</h1>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Параметр</th>
+                <th>Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Любимая команда</td>
+                <td>{{ team }}</td>
+            </tr>
+            <tr>
+                <td>Тема интерфейса</td>
+                <td>{{ theme }}</td>
+            </tr>
+            <tr>
+                <td>Язык интерфейса</td>
+                <td>{{ language }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{% url 'index' %}">Вернуться к настройкам</a>
+</body>
+</html>

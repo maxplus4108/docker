@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.index_page, name='index'),
     path('save-settings/', views.save_settings, name='save_settings'),
     path('admin/', admin.site.urls),
+    path('settings-table/', views.settings_table, name='settings_table'),  # Новый маршрут для таблицы настроек
 ]
