@@ -1,5 +1,3 @@
-# Определение версии Docker Compose и начало описания сервисов
-version: '3'
 
 services:
   django:
