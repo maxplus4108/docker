@@ -1,3 +1,36 @@
-h1{
-    color: blue;
+/* static/fans/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #0033cc;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    margin-top: 20px;
 }

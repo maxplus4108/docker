@@ -1,5 +1,5 @@
 {%load static%}
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,5 +9,46 @@
 </head>
 <body>
     <h1>Hello WORLD</h1>
+</body>
+</html> -->
+
+
+<!-- templates/fans/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <title>Настройка команд</title>
+</head>
+<body>
+    <h1>Настройка любимых команд</h1>
+
+    <form method="post" action="{% url 'save_settings' %}">
+        {% csrf_token %}
+        <label for="team">Выберите любимую команду:</label>
+        <input type="text" id="team" name="team">
+        <br><br>
+
+        <label for="theme">Выберите тему:</label>
+        <select id="theme" name="theme">
+            <option value="light">Светлая</option>
+            <option value="dark">Темная</option>
+        </select>
+        <br><br>
+
+        <label for="language">Выберите язык интерфейса:</label>
+        <select id="language" name="language">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <!-- Добавим графический контент -->
+    <img src="{% static 'fans/sport_fan.png' %}" alt="Спортивные фанаты" width="400px">
 </body>
 </html>
